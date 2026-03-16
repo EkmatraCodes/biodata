@@ -2,13 +2,37 @@
 <html lang="en">
   <head>
     <title>Sumit's Biodata</title>
+    <style>
+.banner{
+  background:#1e40af;
+  color:white;
+  padding:10px;
+  font-weight:bold;
+  overflow:hidden;
+  white-space:nowrap;
+}
+
+.banner span{
+  display:inline-block;
+  animation: slideText 30s linear infinite;
+}
+
+@keyframes slideText{
+  0%{
+    transform: translateX(100vw);
+  }
+  100%{
+    transform: translateX(-100vw);
+  }
+}
+</style>
   </head>
 
     <!-- BODY -->
      <body style="margin: 0px; font-family: trebuchet ms; background: #eaf2ff">
       
       <!-- MARQUEE -->
-      <marquee style="background:#1e40af; color:white; padding:10px; font-weight:bold">Welcome to my personal bio data page</marquee>
+       <div class="banner"><span>Welcome to my personal bio data page</span></div>
        
        <!-- HEADER -->
        <header style="background: #1e40af; padding: 20px; text-align: center">
